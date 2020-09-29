@@ -1,0 +1,82 @@
+a {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.top-bar {
+  padding: 5px 0px;
+  background: rgb(5, 5, 61);
+}
+
+.top-bar .list-group-item {
+  font-size: 0.6rem;
+  padding: 4px 0;
+  border: none;
+  color: #aaa;
+  background: rgb(5, 5, 61);
+}
+.top-bar a {
+  padding: 0 10px;
+  color: #aaa;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+.top-bar li a {
+  border-right: solid 1px gray;
+}
+
+.top-bar li:last-child a {
+  border: none;
+}
+
+/* ------------ END TOP BAR SECTION ----------- */
+
+.main-nav {
+  margin: 30px auto;
+}
+
+.main-nav .nav-item a {
+  margin: 0 5px;
+  background: rgb(5, 5, 61);
+  border-radius: 10px;
+  color: white;
+}
+
+.main-nav .nav-item a:hover {
+  background: orange;
+}
+
+/* --------------- HERO SECTION --------------- */
+.hero-section img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.buttons-container {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.buttons-container button {
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ddd;
+}
+.buttons-container button:focus {
+  background: orange;
+  outline: none;
+}
+
+/* ----------------- MARKETING ---------------- */
+.marketing-section {
+  margin: 25px auto;
+  grid-template-columns: repeat();
+}
+

@@ -1,0 +1,214 @@
+/* ==== Basic CSS Reset ==== */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------------- MY CSS --------------- */
+
+body {
+  margin: 0 auto;
+  background: #eee;
+  /* border: 1px solid blue; */
+}
+
+header {
+  background: #eee;
+  /* border: 1px solid #000; */
+}
+.nav-list {
+  float: right;
+  margin-top: 15px;
+  /* border: 1px solid red;  */
+}
+
+.nav-link {
+  display: inline;
+}
+
+.nav-link a {
+  padding: 12px 22px;
+  margin: auto 5px;
+  color: #fff;
+  background: #333;
+  border-radius: 10px;
+  text-decoration: none;
+}
+ul .nav-link a:hover,
+ul .nav-link a:focus {
+  background: orange;
+  outline: none;
+}
+
+.nav-link a:visited {
+  text-decoration: none;
+  color: #fff;
+  background: #333;
+}
+
+/* ------------- HERO IMAGE ------------- */
+
+.hero-pic {
+  display: block;
+  margin: 15px auto -5px;
+}
+
+.buttons-container {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.hero-container button {
+  padding: 10px;
+  text-align: center;
+  border-radius: 100%;
+  background: #ccc;
+}
+.hero-container button:hover,
+.hero-container button:focus {
+  background: orange;
+  outline: none;
+}
+
+/* --------- END OF HERO SECTION -------- */
+
+.marketing-card {
+  float: left;
+  width: 325px;
+  margin-left: 125px;
+  margin-bottom: 50px;
+}
+
+.marketing-header {
+  padding: 10px;
+  color: rgb(4, 4, 114);
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.marketing-section p {
+  margin-bottom: 30px;
+}
+
+.marketing-section a {
+  padding: 12px 22px;
+  color: #fff;
+  background: rgb(4, 4, 114);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* ------------- SON SECTION ------------ */
+
+.son-info {
+  background: rgb(37, 37, 97);
+  position: relative;
+  width: 100%;
+}
+.son-box {
+  float: left;
+  width: 33.333%;
+  height: 500px;
+  padding: 25px 20px;
+  background: rgb(19, 33, 78);
+  color: white;
+  /* border: 1px solid red; */
+}
+
+.son-box li {
+  list-style: disc;
+}
+
+.son-title {
+  padding: 10px 0;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.opportunity-title {
+  margin-top: 10px;
+}
+
+.fas {
+  color: #ddd;
+  margin-right: 5px;
+}
+
+.son-info a {
+  display: inline-block;
+  padding: 12px 22px;
+  margin-top: 15px;
+  color: #fff;
+  background: #444;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.calendar-box {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: rgb(122, 105, 8);
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.date {
+  font-size: 1.75rem;
+}
+
+.month {
+  font-size: 1rem;
+}
+
+.copywrite {
+  background: #000;
+  color: #fff;
+  height: 10vh;
+  line-height: 10vh;
+}
+
+.clear-float {
+  clear: both;
+}
+
+/*
+Positioning/Display  (flex, grid, hidden etc;)
+Box Model  (margin, padding, width, height etc;)
+Color
+Text (font and alignment)
+Other
+*/

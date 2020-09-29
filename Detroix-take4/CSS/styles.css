@@ -1,0 +1,316 @@
+/* ==== Basic CSS Reset ==== */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* ==== End CSS Reset ==== */
+
+/* #----------------- GLOBAL RULES ----------------- */
+
+/* %----------------- COLOR PALETTE ---------------- */
+/* --rich-black-fogra-29: #131d29ff;
+--cultured: #f3f4f6ff;
+--dark-orange: #ff8901ff;
+--white: #fffdfbff;
+--prussian-blue: #213349ff; */
+/* %----------------- COLOR PALETTE ---------------- */
+
+body a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+body {
+  background: #f3f4f6ff;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+.inner {
+  width: 940px;
+  margin: 0 auto; /* !Very useful: centers a block element */
+}
+
+.clear-fix {
+  clear: both;
+}
+.a-button {
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 14px;
+  border-radius: 7px;
+  background: #131d29ff;
+  color: white;
+}
+
+.a-button:hover {
+  background: orange;
+}
+/*# --------------- END GLOBAL RULES --------------- */
+
+.top-bar {
+  background: #131d29ff;
+  color: white;
+}
+
+.top-bar-nav li {
+  display: inline-block;
+  box-shadow: 12px 0px 0px -11px #999; /* #my preferred */
+}
+
+.top-bar a {
+  display: inline-block; /* normally inline.  Allows us to add padding */
+  padding: 10px 5px;
+  color: #999;
+  text-decoration: none;
+  /* border-right: solid 1px #999;  one option */
+  font-size: 9px;
+}
+
+.top-bar-nav li:last-child {
+  box-shadow: none;
+}
+
+.top-bar-nav {
+  float: right;
+}
+
+/* ----------------- MAIN NAV RULES ---------------- */
+
+.main-nav {
+  margin: 15px auto;
+}
+
+.main-nav nav {
+  float: right;
+}
+
+.main-nav li {
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.main-nav a {
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 14px;
+  border-radius: 7px;
+  background: #131d29ff;
+  color: white;
+}
+
+.main-nav a:hover {
+  background: #ff8901ff;
+}
+
+/* ----------------- HERO SECTION ----------------- */
+
+.slideshow-buttons-container {
+  width: max-content;
+  margin: -5px auto 0;
+}
+
+.slideshow-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ccc;
+}
+.slideshow-button:hover,
+.slideshow-button:focus {
+  background: #ff8901ff;
+  outline: none;
+}
+
+/* ------------------- END HERO ------------------- */
+
+/* ------------------ START ABOUT ----------------- */
+
+.about-section {
+  margin-top: 20px;
+}
+
+.about-card {
+  float: left;
+  width: calc(100% / 3);
+  padding: 5px 20px;
+  border-top: solid #aaa 1px;
+}
+
+.about-card:nth-child(2) {
+  border-right: solid #aaa 1px;
+  border-left: solid #aaa 1px;
+}
+
+.about-card h2 {
+  padding: 15px 0;
+  font-size: 48px;
+}
+
+.about-card img {
+  border-radius: 5px;
+  /* margin-bottom: 15px; */
+}
+
+.about-card p {
+  margin: 25px 0;
+  color: #444;
+}
+
+.about-card .a-button {
+  background: #213349ff;
+  margin-bottom: 25px;
+}
+
+/* ---------- END ABOUT. START ADDITIONAL --------- */
+
+.additional-section {
+  padding-top: 40px;
+  background: rgb(71, 111, 159);
+  background: radial-gradient(
+    circle at top,
+    rgba(71, 111, 159, 1) 6%,
+    rgba(29, 54, 83, 1) 47%
+  );
+}
+
+.additional-card {
+  float: left;
+  width: calc(100% / 3);
+  padding-right: 10px;
+  padding-bottom: 50px;
+  color: #eee;
+  height: 500px;
+}
+
+.additional-card .a-button {
+  margin-top: 15px;
+}
+
+.additional-card h2 {
+  margin-bottom: 20px;
+}
+
+.additional-card h3 {
+  font-size: 18px;
+}
+.services-list {
+  margin-left: 15px;
+  margin-bottom: 35px;
+}
+.services-list li {
+  list-style-image: url(../Images/cog.png);
+  /* line-height: 1.5; */
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* ----------------- OPPORTUNITIES ---------------- */
+
+.single-opp-container {
+  margin-bottom: 32px;
+}
+
+.single-opp-container h3 {
+  font-size: 16px;
+  text-transform: none;
+}
+
+.single-opp-container p {
+  margin-left: 20px;
+  line-height: 1.45;
+  font-size: 15px;
+  color: #888;
+}
+
+.single-opp-container img {
+  padding-right: 5px;
+}
+
+/* ------------------- NEWS CARD ------------------ */
+
+.calendar-container {
+  border: 1px solid orange;
+  float: left;
+  padding: 12px 18px;
+  margin: 5px 20px 25px;
+  text-align: center;
+  border-radius: 10px;
+  background: rgb(167, 88, 45);
+}
+
+.calendar-container .day,
+.calendar-container .month {
+  color: white;
+}
+
+.day {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.month {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.news-item {
+  margin-bottom: 30px;
+}
+
+.news-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.news-item h3 {
+  font-size: 14px;
+  text-transform: none;
+}
+
+.news-item p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* -------------------- FOOTER -------------------- */
+.copyright {
+  padding: 10px 0 40px;
+  font-size: 12px;
+  background: black;
+  color: #aaa;
+}

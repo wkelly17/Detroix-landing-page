@@ -1,0 +1,237 @@
+/* I would normally build with flex, but we aren't using flex or grid right now */
+
+:root {
+  --black: #131c2b;
+  --blue-black: #121c28;
+  --light-gray: #f3f3f5;
+  --orange: #ff8901;
+  --white: #ffffff;
+  --blue: #213349;
+}
+
+/* ==== Basic CSS Reset ==== */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------- END OF RESET RULES --------- */
+
+/* ------------ GLOBAL RULES ------------ */
+body {
+  background: var(--light-gray);
+  font-family: sans-serif;
+}
+.page-width {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.button-a {
+  padding: 10px 14px;
+  background: var(--blue-black);
+  color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.75rem;
+  border-radius: 10px;
+}
+
+.button-a:hover {
+  background: var(--orange);
+}
+
+.clear-fix {
+  clear: both;
+}
+
+/* ------------- END GLOBAL ------------- */
+
+.top-bar {
+  padding: 5px 0;
+  margin-bottom: 15px;
+  color: var(--light-gray);
+  background: var(--black);
+}
+
+.top-bar-list {
+  float: right;
+}
+
+.top-bar-list-item {
+  display: inline;
+  padding: 2px;
+}
+.top-bar-link {
+  /* padding: 5px 3px; */
+  font-size: 0.65rem;
+  color: var(--light-gray);
+  text-decoration: none;
+}
+.top-bar-link:hover {
+  color: var(--orange);
+}
+
+/* ------------- END TOP BAR ------------ */
+
+/* ------------ START NAVBAR ------------ */
+
+.nav-bar {
+  float: right;
+  line-height: 2.5;
+}
+
+.nav-list-item {
+  display: inline;
+}
+
+/* ------------- START HERO ------------- */
+.buttons-container {
+  width: max-content;
+  margin: -10px auto 10px;
+}
+
+.hero-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.hero-button:hover {
+  background: var(--orange);
+}
+
+/* -------------- END HERO -------------- */
+
+.marketing-column {
+  float: left;
+  width: calc(100% / 3);
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+
+.marketing-column-header {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.marketing-text {
+  margin-bottom: 20px;
+}
+
+/* ------ END MARKETING. START INFO ----- */
+.info-section {
+  padding: 15px 0px 50px;
+  background: radial-gradient(
+    circle,
+    rgba(53, 87, 125, 1) 14%,
+    rgba(44, 71, 101, 1) 33%,
+    rgba(16, 24, 34, 1) 76%
+  );
+  color: var(--light-gray);
+}
+
+.info-column {
+  float: left;
+  width: calc(100% / 3);
+  padding: 0 10px;
+  position: relative;
+}
+
+.info-column-header {
+  margin-bottom: 15px;
+  padding-top: 20px;
+  font-style: bold;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.info-button {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.services-item:last-child {
+  margin-bottom: 12px;
+}
+
+.services-item {
+  list-style-image: url(../Images/cog.png);
+  font-size: 0.8rem;
+  line-height: 1.75;
+}
+
+/* opportunities */
+.opportunities-header {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.opportunities-header img {
+  margin-top: 10px;
+  padding: 1px 3px;
+}
+
+.opportunities-item p {
+  font-size: 0.8rem;
+  color: #bbb;
+}
+/* News */
+.calendar-box {
+  float: left;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  background: rgb(145, 140, 9);
+  border-radius: 10px;
+}
+
+.news-header {
+  font-size: 0.85rem;
+  color: var(--white);
+}
+
+.news-text {
+  margin-bottom: 10px;
+  font-size: 0.75rem;
+  color: #bbb;
+}
+
+/* footer */
+footer {
+  background: var(--black);
+  color: var(--light-gray);
+  padding: 20px 0px;
+  font-size: 0.6rem;
+  color: #ccc;
+}
